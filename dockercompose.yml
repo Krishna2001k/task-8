@@ -1,0 +1,9 @@
+version: '3'
+services:
+  nginx:
+    image: your-dockerhub-username/my-custom-nginx:latest
+    ports:
+      - "80:80"
+    volumes:
+      - /var/opt/nginx:/usr/share/nginx/html
+    restart: always
